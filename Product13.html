@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>DECO Product - Coat Black</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+        @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .jumbotron{
+        text-align:center;
+    }
+    
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    .jumbotron{
+        text-align:center;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    .jumbotron{
+        text-align:center;
+    }
+
+}
+
+
+        body {
+            font: 400 15px Courier New, sans-serif;
+            line-height: 1.8;
+            color: #dbe3eb;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .jumbotron {
+            background: url("https://thumbs.dreamstime.com/z/worker-construction-site-pouring-sealant-bucket-waterproofing-cement-industrial-68805329.jpg");
+            background-color: #355286;
+            background-attachment: fixed;
+            color: #fff;
+            padding: 100px 110px;
+            font-family: Montserrat, sans-serif;
+            background-position: left-center;
+            background-size: cover;
+            min-height: 500px;
+            font-size: 2em;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+            font-family: Montserrat;
+
+        }
+
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+
+        .logo-small {
+            color: #3f516e;
+            font-size: 50px;
+        }
+
+        .logo {
+            color: #3f516e;
+            font-size: 150px;
+        }
+
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+
+        .carousel-control.right, .carousel-control.left {
+            background-image: none;
+            color: #8a9fc6;
+        }
+
+        .carousel-indicators li {
+            border-color: #8a9fc6;
+        }
+
+        .carousel-indicators li.active {
+            background-color: #8a9fc6;
+        }
+
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+
+        .item span {
+            font-style: normal;
+        }
+
+        .panel {
+            border: 1px solid #8a9fc6;
+            border-radius: 0 !important;
+            -webkit-transition: -webkit-box-shadow 0.5s;
+            transition: -webkit-box-shadow 0.5s;
+            -o-transition: box-shadow 0.5s;
+            transition: box-shadow 0.5s;
+            transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+        }
+
+        .panel:hover {
+            -webkit-box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+
+        .panel-footer .btn:hover {
+            border: 1px solid #8a9fc6;
+            background-color: #fff !important;
+            color: #8a9fc6;
+        }
+
+        .panel-heading {
+            color: #fff !important;
+            background-color: #8a9fc6 !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .panel-footer {
+            background-color: white !important;
+        }
+
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #8a9fc6;
+            color: #fff;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #f18b0c;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #123456 !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-nav li a:hover {
+            -webkit-transition-duration: 0.7s;
+            -o-transition-duration: 0.7s;
+            transition-duration: 0.7s;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+            background-color: white;
+        }
+
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #b13721;
+        }
+
+        .slideanim {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+
+        .x, .y {
+            font-style: oblique;
+        }
+
+        .z {
+            color: black;
+
+        }
+
+        .a {
+            font-weight: 600;
+            text-shadow: 2px 2px #666b70, 0px 4px 3px rgba(0, 0, 0, 0.8), 0px 8px 13px rgba(0, 0, 0, 0.2);
+
+            padding: auto auto;
+
+        }
+
+        .b {
+            text-shadow: 2px 2px #666b70, 0px 4px 3px rgba(0, 0, 0, 0.8), 0px 8px 13px rgba(0, 0, 0, 0.2);
+        }
+
+        .d {
+            font-weight: bold;
+            color: black;
+
+        }
+
+        .dropdown-menu {
+            background-color: #f4511e;
+        }
+
+        #box1 {
+            color: black;
+        }
+
+        #box2 {
+            background: #ffff81;
+            color: black;
+            max-width: 400px;
+            margin: auto auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        #box2:hover {
+            background: #ffff62;
+            -webkit-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+
+        #ss {
+          
+            height:250px;
+            width:400px;
+            border-radius: 20px;
+           
+            max-width:100%;
+        }
+
+        #ss:hover {
+            height: 280px;
+            width: 420px;
+            -webkit-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+        .font_para {
+            font-size: 18px;
+        }
+
+        #si {
+            color: #d8a144;
+            margin-top: 90px;
+            margin: auto auto;
+        }
+
+        #si:hover {
+            font-size: 150px;
+            -webkit-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            text-shadow: -2px 0 #f4511e, 0 2px #f4511e, 2px 0 #f4511e, 0 -2px #f4511e;
+            text-shadow: -4px -3px, 3px 4px #f4511e, 4px -3px #f4511e, 3px -4px #f4511e;
+        }
+
+        #uses {
+            background-color: #f6ffc6;
+        }
+
+        #gotop:hover {
+            font-size: 40px;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+
+        footer {
+            background-color: #f0dcd0;
+        }
+
+        @-webkit-keyframes opac {
+            from {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes opac {
+            from {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        .fadeInProp {
+            -webkit-animation: opac 0.8s;
+            animation: opac 0.8s;
+        }
+
+        .lastH:hover {
+            font-size: 40px;
+        }
+
+        #contact {
+            background: url("https://thalappakatti.com/wp-content/uploads/2016/11/contact-us-banner.jpg");
+            -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+            background-size: cover;
+            font-weight: 300;
+            background-position: right;
+        }
+
+        .glyphicon-tag {
+            font-size:10px;
+        }
+
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="DECOindex3.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">DESCRIPTION</a></li>
+                <li><a href="#uses">USES</a></li>
+
+                <li class="w3-dropdown-hover">
+                    <a href="#">PRODUCTS
+                        <span class="caret"></span></a>
+                    <ul class="w3-dropdown-content dropdown-menu">
+                        <li><a href="Productnew.html">COOLGAURD</a></li>
+                        <li><a href="#">CRETE</a></li>
+                        <li><a href="#">CRYSTALLINE</a></li>
+                        <li><a href="#">EMB</a></li>
+                        <li><a href="#">FILLER</a></li>
+                        <li><a href="#">GAURD</a></li>
+                        <li><a href="#">JOINT SEAL</a></li>
+                        <li><a href="Product8.html">NO. 3</a></li>
+                        <li><a href="Product9.html">PRIME</a></li>
+                        <li><a href="Product10.html">SPR</a></li>
+                        <li><a href="Product11.html">THERMAL COAT</a></li>
+                        <li><a href="Product12.html">TILE AID</a></li>
+                        <li><a href="Product13.html">COAT BLACK</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#contact">CONTACT US</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <strong><h1 class="a fadeInProp">DECO COAT BLACK</h1></strong>
+    <h3 class="b"><b> AN ACRYLIC MODIFIED BITUMINOUS COATING </b></h3>
+
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-7">
+            <h1 class="d"><strong>ABOUT COAT BLACK</strong></h1><br>
+            <h4><b>DECO COAT BLACK</b> a cold applied anti- corrosive bitumen coating comprising of selected grade of asphalt and fast drying solvent to act as damp proofing membrane. It can also be used as protective coating below ground. </h4><br>
+
+        </div>
+        <div class="col-sm-4">
+            <img class="w3-hover-shadow" id="ss" src="https://sc02.alicdn.com/kf/HTB1LcdILXXXXXbAXXXXq6xXFXXXO/Waterproofing-Materials.jpg">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+
+
+<div id="uses" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <span id="si" class=" glyphicon glyphicon-certificate logo"></span>
+        </div>
+        <div id="box1" class="col-sm-4">
+            <i><h2>Advantages:</h2></i>
+            <p class="font_para"> 
+                <span class="glyphicon glyphicon-tag"></span><em> Easy to use and smooth finish</em> with Excellent adhesion.
+                <br>
+
+                <span class="glyphicon glyphicon-tag"></span> Good resistance to <ins>mild acids, alkalis and salt</ins>
+                <br>
+
+                <span class="glyphicon glyphicon-tag"></span> Exhibits soil bacteria resistance.
+                <br>
+
+                <span class="glyphicon glyphicon-tag"></span> <b> DECO COAT BLACK</b> can be applied using brush, roller or spray. Minimum of two coats should be applied. 2nd coat should be applied once the 1st coat is dry.
+                <br>
+
+
+                <span class="glyphicon glyphicon-tag"></span><b> DECO COAT BLACK</b> is available in <ins>1, 4 and 20 Kg Pails</ins> <br>
+
+
+            </p>
+
+        </div>
+        <div class="col-sm-1"></div>
+        <div id="box2" class="w3-hover-shadow col-sm-4">
+            <h2>Primary Uses & Surface Preparation</h2>
+
+            <p class="font_para"> Protective anti – corrosive, waterproof coating for metal and concrete surfaces terraces, basements, drains and down pipes
+                <br>
+
+                <span class="glyphicon glyphicon-tag"></span> <b> Preparation -</b>Concrete, mortar and masonry surface must be <mark>clean, free from grease, oil and loosely adhering particles.</mark> 
+                <br>
+
+                <span class="glyphicon glyphicon-tag"></span> <b> DECO COAT BLACK </b>will cover appx.<ins> 1.5 - 2 sqmt/ 2 coats/ kg.</ins> The coverage can vary depending on the porosity of the substrate.
+                <br>
+
+                <span class="glyphicon glyphicon-tag"></span> Store under cover, <e,>out of direct sunlight and protect from extreme temperature. </em>Failure to comply with the recommended storage conditions may result in<ins> premature deterioration of the product or packaging.</ins>
+                 <br>
+
+               </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- add contact form-->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center"><b>CONTACT</b></h2>
+    <div class="row">
+        <div class="col-sm-5 z">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Model Town Road, Jalandhar</p>
+            <p><span class="glyphicon glyphicon-phone"></span> 09878111110,09569492229 </p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@deco.net.in</p>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--add maps api-->
+<div id="map"></div>
+<script>
+
+    function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 31.3260, lng: 75.5762},
+            zoom: 8
+        });
+
+        var marker = new google.maps.Marker({
+            position: {lat: 31.3260, lng: 75.5762},
+            map: map
+        });
+
+        var infoWindow = new google.maps.InfoWindow({
+            content: '<h1 class = "d">ES 12, Civil Lines, Model Town Road, Jalandhar, Punjab</h1>'
+        });
+
+        marker.addListener('click', function () {
+            infoWindow.open(map, marker);
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUoFimNlsUM7FI3CPJjd_0nJ_gvISGzAw&callback=initMap"
+        async defer></script>
+
+
+<!-- add foooter-->
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="lastH glyphicon glyphicon-chevron-up" id="gotop"></span></a>
+            <h4 class="z"><b>Go To Top</b></h4>
+
+
+    </footer>
+
+
+
+<!-- add js-->
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+
+</body>
+</html>

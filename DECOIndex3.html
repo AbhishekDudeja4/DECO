@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- PROJECT BY SIMARPREET AND ABHISHEK - No Copyright -->
+    <title>DECO Construction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+
+    <style>
+
+        body {
+            font: 400 15px Courier New, sans-serif;
+            line-height: 1.8;
+            color: #dbe3eb;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .jumbotron {
+            background: url("http://www.1888goodwin.com/wp-content/uploads/2016/09/Construction-Site.jpg");
+            background-color: #355286;
+            color: #fff;
+            padding: 100px 110px;
+            font-family: Montserrat, sans-serif;
+            background-position: left-center;
+            background-size: cover;
+            min-height: 500px;
+            background-attachment: fixed;
+
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+            font-family: Montserrat;
+
+        }
+
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+
+        .logo-small {
+            color: #3f516e;
+            font-size: 50px;
+        }
+
+        .logo {
+            color: #3f516e;
+            font-size: 200px;
+        }
+
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+
+        .carousel-control.right, .carousel-control.left {
+            background-image: none;
+            color: #8a9fc6;
+        }
+
+        .carousel-indicators li {
+            border-color: #8a9fc6;
+        }
+
+        .carousel-indicators li.active {
+            background-color: #8a9fc6;
+        }
+
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+
+        .item span {
+            font-style: normal;
+        }
+
+        .panel {
+            border: 1px solid #8a9fc6;
+            border-radius: 0 !important;
+            -webkit-transition: -webkit-box-shadow 0.5s;
+            transition: -webkit-box-shadow 0.5s;
+            -o-transition: box-shadow 0.5s;
+            transition: box-shadow 0.5s;
+            transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+        }
+
+        .panel:hover {
+            -webkit-box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+
+        .panel-footer .btn:hover {
+            border: 1px solid #8a9fc6;
+            background-color: #fff !important;
+            color: #8a9fc6;
+        }
+
+        .panel-heading {
+            color: #fff !important;
+            background-color: #8a9fc6 !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .panel-footer {
+            background-color: white !important;
+        }
+
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #8a9fc6;
+            color: #fff;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #639cd4;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #123456 !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-nav li a:hover {
+            -webkit-transition-duration: 0.7s;
+            -o-transition-duration: 0.7s;
+            transition-duration: 0.7s;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+            background-color: white;
+        }
+
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #8a9fc6;
+        }
+
+        .slideanim {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+
+        .x, .y {
+            font-style: oblique;
+            color: black;
+            font-weight: bold;
+        }
+
+        .x {
+            font-size: 23px;
+        }
+
+        .z {
+            color: black;
+
+        }
+
+        .a {
+            font-weight: 600;
+            text-shadow: 2px 2px #666b70, 0px 4px 3px rgba(0, 0, 0, 0.8), 0px 8px 13px rgba(0, 0, 0, 0.2);
+
+          
+        }
+
+        .b {
+            text-shadow: 2px 2px #666b70, 0px 4px 3px rgba(0, 0, 0, 0.8), 0px 8px 13px rgba(0, 0, 0, 0.2);
+        }
+
+        .d {
+            font-weight: bold;
+            color: black;
+        }
+
+        .dropdown-menu {
+            background-color: #639cd4;
+        }
+
+        .e {
+            color: black;
+            font-size: 23px;
+        }
+
+        .f {
+            color: black;
+        }
+
+        .g {
+            color: #201763;
+        }
+
+        .icons {
+            display: inline;
+        }
+
+        div.item {
+            position: relative;
+            float: left;
+            overflow: hidden;
+            margin: 10px 1%;
+            /*min-width: 220px;*/
+            /*max-width: 310px;*/
+            width: 100%;
+            background: #000000;
+            text-align: center;
+            -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        }
+
+        div.item * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        div.item img {
+            max-width: 100%;
+            vertical-align: top;
+            /*height: 210px;*/
+        }
+
+        div.item span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            font-size: 34px;
+            color: #000000;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background: #ffffff;
+        }
+
+        div.item a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
+
+        div.item {
+            background-color: #639cd4;
+        }
+
+        div.item span {
+            color: #639cd4;
+        }
+
+        div.item:hover img {
+            opacity: 0.3;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        div.item * {
+            -webkit-transition: all .35s ease-in-out;
+            -o-transition: all .35s ease-in-out;
+            transition: all .35s ease-in-out;
+        }
+
+        div.item span {
+            -webkit-transform: translate(-50%, -50%) scale(0);
+            -ms-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+            -webkit-transition: -webkit-transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            transition: -webkit-transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            -o-transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045), -webkit-transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        }
+
+        div.item:hover span {
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+            -webkit-transition: -webkit-transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: -webkit-transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -o-transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .figure-caption {
+            font-size: 25px;
+        }
+
+        .selPort {
+            display: none;
+            background-color: #f5fbff;
+        }
+
+        .glyphicon1:hover {
+            color: #639cd4;
+            font-size: 7em;
+            -webkit-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            text-shadow: -2px 0 #639cd4, 0 2px #639cd4, 2px 0 #639cd4, 0 -2px #639cd4;
+            text-shadow: -4px -3px #2b73b9, 3px 4px #2b73b9, 4px -3px #2b73b9, 3px -4px #2b73b9;
+        }
+
+        .si:hover {
+            font-size: 200px;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #639cd4;
+        }
+
+        .abc:hover {
+            font-size: 60px;
+        }
+
+        .port {
+            text-align: center;
+            margin-left: 300px;
+            color: #1f5172;
+        }
+
+        .not:hover {
+            font-size: 50px;
+        }
+
+        @-webkit-keyframes opac {
+            from {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes opac {
+            from {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        .fadeInProp {
+            -webkit-animation: opac 0.8s;
+            animation: opac 0.8s;
+        }
+
+
+        .portgly:hover {
+            font-size: 50px;
+        }
+
+        #contact {
+            background: url("https://thalappakatti.com/wp-content/uploads/2016/11/contact-us-banner.jpg");
+            -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+            background-size: cover;
+            font-weight: 300;
+            background-position: center;
+        }
+
+        
+
+        @media screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
+   and (-webkit-min-device-pixel-ratio: 2)
+  { 
+    .respo{
+       text-align:left;
+
+    }
+}
+
+/* Portrait */
+@media screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .a{
+        text-align:center;
+    }
+
+}
+    #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+   border-top: 16px solid blue;
+ border-right: 16px solid green;
+ border-bottom: 16px solid red;
+ border-left: 16px solid pink;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+    </style>
+</head>
+
+<!-- begin body-->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()" style ="margin:0;">
+
+<div id = "loader"></div>
+
+<div id = "myDiv" class = "animate-bottom" style ="display:none;">
+
+<!-- insert navbae-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+
+                <li class="w3-dropdown-hover">
+                    <a href="#">PRODUCTS
+                        <span class="caret"></span></a>
+                    <ul class="w3-dropdown-content dropdown-menu">
+                        <li><a href="Productnew.html">COOLGAURD</a></li>
+                        <li><a href="#">CRETE</a></li>
+                        <li><a href="#">CRYSTALLINE</a></li>
+                        <li><a href="#">EMB</a></li>
+                        <li><a href="#">FILLER</a></li>
+                        <li><a href="#">GAURD</a></li>
+                        <li><a href="#">JOINT SEAL</a></li>
+                        <li><a href="Product8.html">NO. 3</a></li>
+                        <li><a href="Product9.html">PRIME</a></li>
+                        <li><a href="Product10.html">SPR</a></li>
+                        <li><a href="Product11.html">THERMAL COAT</a></li>
+                        <li><a href="Product12.html">TILE AID</a></li>
+                        <li><a href="Product13.html">COAT BLACK</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="respo jumbotron text-center">
+    <div class = "respo">
+    <strong><h1 class="a fadeInProp">DECO Construction Chemicals</h1></strong>
+    <h3 class="b">We specialize in Exterior & Interior Solutions</h3>
+</div>
+</div>
+
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h1 class="d"><strong style="color:#1b1547">ABOUT THE COMPANY</strong></h1><br>
+            <h4>DECO Construction Chemicals is one of the new construction chemicals companies in India. Being deeply
+                rooted in our strong values, we seek inspiration from our heritage. We have contributed to the evolution
+                and advancement of the industry through our projects and our products. <br><br>Providing complete
+                interiors and exteriors solutions, we provide
+                services through innovative and detailed study of the visual expressions leading to a complete
+                transformation.</h4><br>
+
+            <br>
+            <a class="btn btn-default btn-lg" href="#contact">Get in Touch</a>
+        </div>
+        <div class="col-sm-4">
+            <span class="si glyphicon1 glyphicon glyphicon-signal logo"></span>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="si glyphicon1 glyphicon glyphicon-globe logo slideanim"></span>
+        </div>
+        <div class="col-sm-8">
+            <h2 style="color:#1b1547">Our Values</h2><br>
+            <h4><strong style="color:#1b1547">STRENGTH:</strong> <br> A solid backup of more than five companies,
+                technical expertise and labors skilled in virtually every area of relevant work. We collaborate with
+                leading engineers and consultants and possess the capability of engaging our highly skilled workers in
+                any environment. <br><br>We also bring together people with a variety of skills and expertise and
+                provide our customers with complete turnkey operations. Our quality resources include several specialty
+                manufactures in the field.</h4><br>
+
+            <h4><strong style="color:#1b1547">STRATEGY:</strong> <br>We not only believe in doing our work, we share
+                responsibilities with it. We believe in finding out the trend of the existing market, to deliver all
+                these variables.</h4><br>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+    <h2 style="color:#1b1547">SERVICES</h2>
+    <h4 class="x">What All We Have To Offer:</h4>
+    <br>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <span class="glyphicon1 glyphicon glyphicon-tint logo-small abc"></span>
+            <h4 class="g">Waterproofing</h4>
+            <p class="f">Waterproof lining for water retaining structures , As a waterproof coating for roofs, As a
+                backing to marble and granite to prevent water ingress and thus alleviate surface staining.</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon1 glyphicon glyphicon-picture logo-small abc"></span>
+            <h4 class="g">Texture Paints</h4>
+            <p class="f">Made of a special grade emulsion, provides defense against all weather conditions, It includes
+                a tough and flexible resin along with many exclusive additives.</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon1 glyphicon glyphicon-remove logo-small abc"></span>
+            <h4 class="g">Anti-Termite</h4>
+            <p class="f">Advanced techniques for treating the termite infestation problem,
+                Direct liquid treatments are applied to the outside, inside and also in the foundation to eliminate the
+                termites completely. </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <span class="glyphicon1 glyphicon glyphicon-oil logo-small abc"></span>
+            <h4 class="g">Paints & Varnishes</h4>
+            <p class="f">Render brilliancy to the
+                painted surface and protect painted surface from atmospheric action. Protects unpainted wooden surfaces
+                of doors, windows, roof trusses, floors etc from atmospheric action.</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon1 glyphicon glyphicon-filter logo-small abc"></span>
+            <h4 class="g">Water Purifications</h4>
+            <p class="f">We provide best in class services for removal of contaminants from raw water so
+                that it is made fit for industrial use and regular consumption.</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon1 glyphicon glyphicon-thumbs-up logo-small abc"></span>
+            <h4 class="g">Other Construction Chemicals</h4>
+            <p class="f">Check out our complete product range above to get detailed information about COOLGAURD, FILLER,
+                CRYSTALLINE and other products.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+    <h1 class="d">Portfolio</h1><br>
+    <h3 class="y">Our Major Projects & Clients</h3><br>
+    <div class="row text-center slideanim">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <div class="item">
+
+                    <figure class="figure">
+                        <img src="https://image.slidesharecdn.com/lpudepresentation-121214000137-phpapp01/95/lovely-professional-university-distance-education-3-638.jpg?cb=1355443870"
+                             alt="LPU" width="400" height="400">
+                        <span class="portgly icons glyphicon glyphicon-plus-sign not"></span>
+                        <figcaption class="figure-caption">Lovely Professional University, Cherru</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail align-middle">
+                <div class="item">
+
+                    <figure class="figure">
+                        <img src="https://static-collegedunia.com/public/college_data/images/appImage/25779_DAVU_NEW.jpg"
+                             alt="DAV" width="400" height="400">
+                        <span class="portgly icons glyphicon glyphicon-plus-sign not"></span>
+                        <figcaption class="figure-caption">DAV University, Jalanadhar</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <div class="item">
+
+                    <figure class="figure">
+                        <img src="https://u4uvoice.com/wp-content/uploads/2016/05/skuast.jpg" alt="SKUAST" width="400"
+                             height="400">
+                        <span class="portgly icons glyphicon glyphicon-plus-sign not"></span>
+                        <figcaption class="figure-caption">University Of Agricultural Sciences & Technology, Chatha
+                            ,Jammu
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+
+<!-- on click cards-->
+<div class="selPort">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-lg-6 col-sm-8 port">
+                <h2 style="font-family:Montserrat">Lovely Professional University</h2>
+                <p style="font-family:Montserrat">Lovely Professional University (LPU) is a private university situated
+                    in Jalandhar, Punjab, India. The university was established in 2005 by Lovely International Trust,
+                    under The Lovely Professional University Act, 2005. With 24,000 students in 2010, it claims to be
+                    the largest single-campus private university in India.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="selPort">
+    <div class="row">
+
+
+        <div class="col-lg-6 col-sm-8 port">
+            <h2 style="font-family:Montserrat">DAV University, Jalandhar</h2>
+            <p style="font-family:Montserrat">DAV University at Jalandhar traces its roots to the legacy that has been
+                reforming and redefining India's educational scenario for 130 years. The university is the culmination
+                of the movement that started with the founding of the first DAV institute to propagate the ideals of the
+                religious and social reformer Swami Dayanand Saraswati in Lahore on June 1, 1886.</p>
+        </div>
+    </div>
+</div>
+
+<div class="selPort">
+    <div class="row">
+
+
+        <div class="col-lg-6 col-sm-8 port">
+            <h2 style="font-family:Montserrat">University Of Agricultural Sciences & Technology</h2>
+            <p style="font-family:Montserrat">Sher-e-Kashmir University of Agricultural Sciences & Technology of is an
+                agricultural university located in Srinagar, Jammu and Kashmir, India. With its main campus in Shalimar,
+                Srinagar, the University has multiple campuses, colleges, research and extension centers across the
+                Kashmir Valley and Ladakh regions of the state.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center"><b>CONTACT</b></h2>
+    <div class="row">
+        <div class="col-sm-5 z">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Model Town Road, Jalandhar</p>
+            <p><span class="glyphicon glyphicon-phone"></span> 09878111110,09569492229 </p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@deco.net.in</p>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- google maps api-->
+<div id="map"></div>
+<script>
+
+    function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 31.3260, lng: 75.5762},
+            zoom: 8
+        });
+
+        var marker = new google.maps.Marker({
+            position: {lat: 31.3260, lng: 75.5762},
+            map: map
+        });
+
+        var infoWindow = new google.maps.InfoWindow({
+            content: '<h1 class = "d">ES 12, Civil Lines, Jalandhar, Punjab</h1>'
+        });
+
+        marker.addListener('click', function () {
+            infoWindow.open(map, marker);
+        });
+
+
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUoFimNlsUM7FI3CPJjd_0nJ_gvISGzAw&callback=initMap"
+        async defer></script>
+
+
+<!-- go to top footer-->
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up abc" style="color:#0d2636"></span>
+    </a>
+    <p style="color: #303031">DECO Construction Chemicals</p>
+
+</footer>
+
+
+
+<!-- include js and loader -->
+
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 100);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+<script src="web.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+
+
+
+</body>
+</html>
